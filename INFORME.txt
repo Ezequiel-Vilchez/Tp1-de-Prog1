@@ -1,0 +1,23 @@
+Implementaciones
+
+1-Herencia:
+La clase base Persona define atributos(nombre, apellido, documento). Las clases Estudiante, Profesor y Personal heredan de Persona (extends Persona), reutilizando estos atributos y añadiendo los suyos propios.
+
+2-Polimorfismo:
+Se utilizó la interfaz MiembroUniversidad, que define los métodos obtenerRol() y obtenerInformacionCompleta(). Estudiante, Profesor y Personal implementan esta interfaz.La clase Universidad gestiona a todos los miembros en un único array: MiembroUniversidad[] miembros. Esto permite tratar a objetos de diferentes tipos (Estudiante, Profesor).Se muestra el comportamiento polimórfico entre las clases hijas.
+
+3-Recursividad:
+Se implementaron métodos recursivos para operaciones clave:
+calcularPromedioRecursivo(...): Calcula el promedio de un estudiante.
+contarEstudiantesRecursivo(...): Cuenta cuántos estudiantes pertenecen a una carrera.
+buscarEstudianteRecursivo(...): Busca un estudiante por documento (como ejemplo de búsqueda lineal recursiva).
+Para cada uno de estos métodos, se implementó también una versión iterativa, lo que permitió comparar ambas técnicas.
+
+4-Ordenamiento y busqueda
+Se implementaron los algoritmos de ordenamiento y búsqueda:
+Ordenamiento por Selección: Se utilizó en el método ordenarEstudiantesPorApellido() para ordenar la lista de estudiantes alfabéticamente.
+Búsqueda Binaria: Se implementó para buscar a un estudiante por apellido, aprovechando que la lista ya estaba ordenada.
+
+Ambos algoritmos fueron una buena práctica para entender mejor la eficiencia, el funcionamiento de las comparaciones y el manejo de los arreglos.
+
+
